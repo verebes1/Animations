@@ -18,19 +18,19 @@ struct ExplicitAnimationScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             // Button
-            ShapedButton(title: "Flip me", color: .blue, textColor: .white, clipShape: AnyShape(Circle())) {
-                withAnimation {
-                    rotationDegrees += 180
+            ShapedButton(title: "Flip me", color: .blue, textColor: .white, clipShape: AnyShape(RoundedRectangle(cornerRadius: 15))) {
+                withAnimation(.interpolatingSpring(stiffness: 50, damping: 2.5)) {
+                    rotationDegrees = rotationDegrees == 0.0 ? 180 : 0
                 }
             }
-            .rotation3DEffect(.degrees(rotationDegrees), axis: (x, y, z))
+            .rotation3DEffect(.degrees(rotationDegrees), axis: (1, 0, 0))
             
             // Shape
             ZStack {
                 Rectangle()
                     .frame(width: 100, height: 100)
                     .foregroundColor(.yellow)
-                    .clipShape(flipped ? AnyShape(Capsule()) : AnyShape(RoundedRectangle(cornerRadius: 10)))
+                    .clipShape(flipped ? AnyShape(Circle()) : AnyShape(RoundedRectangle(cornerRadius: 10)))
                 Text("Flipping\n Shape")
             }
             .rotation3DEffect(.degrees(flipped ? -180 : 0), axis: (x, y, z))

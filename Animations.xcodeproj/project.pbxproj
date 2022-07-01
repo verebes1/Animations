@@ -11,10 +11,12 @@
 		4F42ED4628662E15008235D0 /* ImplicitAnimationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42ED4528662E15008235D0 /* ImplicitAnimationScreen.swift */; };
 		4F42ED4828662E16008235D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F42ED4728662E16008235D0 /* Assets.xcassets */; };
 		4F42ED4B28662E16008235D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F42ED4A28662E16008235D0 /* Preview Assets.xcassets */; };
+		4F990624286F890F00B71901 /* TransitionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F990623286F890F00B71901 /* TransitionsScreen.swift */; };
 		4FA7D06C286737BE001E2F5D /* ShapedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7D06B286737BE001E2F5D /* ShapedButton.swift */; };
 		4FA7D06E28675F7B001E2F5D /* MainTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7D06D28675F7B001E2F5D /* MainTabScreen.swift */; };
 		4FA7D0702867608F001E2F5D /* AnimatedBindingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7D06F2867608F001E2F5D /* AnimatedBindingsScreen.swift */; };
 		4FA7D0732868BDF0001E2F5D /* ExplicitAnimationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7D0722868BDF0001E2F5D /* ExplicitAnimationScreen.swift */; };
+		4FBF38E1286F7906006994DD /* GesturesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF38E0286F7906006994DD /* GesturesScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +25,12 @@
 		4F42ED4528662E15008235D0 /* ImplicitAnimationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitAnimationScreen.swift; sourceTree = "<group>"; };
 		4F42ED4728662E16008235D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F42ED4A28662E16008235D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F990623286F890F00B71901 /* TransitionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionsScreen.swift; sourceTree = "<group>"; };
 		4FA7D06B286737BE001E2F5D /* ShapedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapedButton.swift; sourceTree = "<group>"; };
 		4FA7D06D28675F7B001E2F5D /* MainTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabScreen.swift; sourceTree = "<group>"; };
 		4FA7D06F2867608F001E2F5D /* AnimatedBindingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBindingsScreen.swift; sourceTree = "<group>"; };
 		4FA7D0722868BDF0001E2F5D /* ExplicitAnimationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationScreen.swift; sourceTree = "<group>"; };
+		4FBF38E0286F7906006994DD /* GesturesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				4F42ED4528662E15008235D0 /* ImplicitAnimationScreen.swift */,
 				4FA7D06F2867608F001E2F5D /* AnimatedBindingsScreen.swift */,
 				4FA7D0722868BDF0001E2F5D /* ExplicitAnimationScreen.swift */,
+				4FBF38E0286F7906006994DD /* GesturesScreen.swift */,
+				4F990623286F890F00B71901 /* TransitionsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -157,10 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F990624286F890F00B71901 /* TransitionsScreen.swift in Sources */,
 				4FA7D0702867608F001E2F5D /* AnimatedBindingsScreen.swift in Sources */,
 				4F42ED4628662E15008235D0 /* ImplicitAnimationScreen.swift in Sources */,
 				4FA7D06C286737BE001E2F5D /* ShapedButton.swift in Sources */,
 				4FA7D06E28675F7B001E2F5D /* MainTabScreen.swift in Sources */,
+				4FBF38E1286F7906006994DD /* GesturesScreen.swift in Sources */,
 				4FA7D0732868BDF0001E2F5D /* ExplicitAnimationScreen.swift in Sources */,
 				4F42ED4428662E15008235D0 /* AnimationsApp.swift in Sources */,
 			);

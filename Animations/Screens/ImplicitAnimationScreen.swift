@@ -13,8 +13,11 @@ struct ImplicitAnimationScreen: View {
     @State private var bounceAnimation = 1.0
     @State private var pulseAnimation = 1.0
     
+    // double animation stack
+    @State private var morphed = false
+    
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 35) {
             ShapedButton(title: "Scaling\n Blurring", color: .red, textColor: .white, padding: 30, clipShape: AnyShape(Circle())) {
                 animationAmount = animationAmount == 4 ? 1.0 : animationAmount + 1
             }
@@ -52,6 +55,22 @@ struct ImplicitAnimationScreen: View {
             .onAppear {
                 pulseAnimation = 2
             }
+            
+            Button("Morphing") {
+                morphed.toggle()
+            }
+            .foregroundColor(.white)
+//            .frame(width: morphed ? 150 : 200, height: 50, alignment: .center)
+            .frame(width: 150, height: 50, alignment: .center)
+            .background(morphed ? .gray : .teal)
+            .animation(.easeInOut(duration: 3.5), value: morphed)
+//            .padding(10)
+//            .background(.blue)
+            .clipShape(RoundedRectangle(cornerRadius: morphed ? 50 : 0))
+//            .rotation3DEffect(.degrees(morphed ? 180 : 0), axis: (0, 1, 0))
+            .rotation3DEffect(.degrees(morphed ? 180 : 0), axis: (1, 0, 0))
+            .scaleEffect(morphed ? 1.3 : 1)
+            .animation(.interpolatingSpring(stiffness: 100, damping: 1), value: morphed)
         }
     }
 }
