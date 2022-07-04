@@ -26,6 +26,11 @@ struct TransitionsScreen: View {
                     .fill(.red)
                     .frame(width: 200, height: 200)
                     .transition(.asymmetric(insertion: .scale, removal: .slide))
+                
+                Rectangle()
+                    .fill(.blue)
+                    .frame(width: 200, height: 200)
+                    .transition(.pivot)
             }
         }
         
